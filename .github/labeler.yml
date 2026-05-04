@@ -1,0 +1,30 @@
+doc:
+  - changed-files:
+    - any-glob-to-any-file:
+      - '**/*.md'
+      - 'docs/**'
+      - 'LICENSE*'
+
+code:
+  - changed-files:
+    - any-glob-to-any-file:
+      - '**/*.ts'
+      - '**/*.tsx'
+      - '**/*.js'
+      - '**/*.jsx'
+      - '**/*.css'
+
+dep:
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'package.json'
+      - 'bun.lock'
+
+config:
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'tsconfig*.json'
+      - '*.config.*'
+      - '.*rc'
+      - '.*rc.*'
+      - '.github/dependabot.yml'
