@@ -1,0 +1,67 @@
+index.html
+  0b892114f7fd11d8 5
+docs/getting-started.md
+  0b892114f7fd11d8 16
+src/components/Footer.tsx
+  4505c645bc4464f7 1-188
+src/components/lightswind/ascii-wave.tsx
+  0b892114f7fd11d8 4-127
+skills/zenon.red/SKILL.md
+  0b892114f7fd11d8 21
+src/components/Preloader.tsx
+  0b892114f7fd11d8 51
+.github/workflows/deploy.yml
+  0b892114f7fd11d8 19
+src/components/Hero.tsx
+  0b892114f7fd11d8 126-172
+src/index.css
+  0b892114f7fd11d8 1-243
+.husky/pre-push
+  fb80fc36372b95ac 2
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.3.4",
+  "base_commit_sha": "41d695a00acd44bb14191b3c831859474f93e407",
+  "prompts": {
+    "0b892114f7fd11d8": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_20eff03edffefsexjOdZmPsygK",
+        "model": "opencode-go/deepseek-v4-pro"
+      },
+      "human_author": "ZŌE",
+      "messages": [],
+      "total_additions": 192,
+      "total_deletions": 1530,
+      "accepted_lines": 419,
+      "overriden_lines": 0
+    },
+    "4505c645bc4464f7": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_20c979192ffeALHukAZEI8Hu3N",
+        "model": "opencode-go/deepseek-v4-pro"
+      },
+      "human_author": null,
+      "messages": [],
+      "total_additions": 95,
+      "total_deletions": 2,
+      "accepted_lines": 188,
+      "overriden_lines": 0
+    },
+    "fb80fc36372b95ac": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_208386e51ffeA9mKrz4SvQ42Yf",
+        "model": "opencode-go/deepseek-v4-pro"
+      },
+      "human_author": null,
+      "messages": [],
+      "total_additions": 1,
+      "total_deletions": 1,
+      "accepted_lines": 1,
+      "overriden_lines": 0
+    }
+  }
+}
