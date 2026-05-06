@@ -61,11 +61,11 @@ export function Navigation() {
 
       <div className="flex items-center gap-8">
         <button
-          onClick={() => scrollTo("#about")}
+          onClick={() => scrollTo("#projects")}
           className="hidden cursor-pointer font-mono text-xs tracking-[0.15em] text-muted-foreground uppercase transition-colors hover:text-foreground sm:block"
-          aria-label="Scroll to About section"
+          aria-label="Scroll to Projects section"
         >
-          <ScrambleText text="ZENON Red" />
+          <ScrambleText text="Projects" />
         </button>
         <button
           onClick={() => scrollTo("#zoe")}

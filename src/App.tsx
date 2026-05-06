@@ -1,6 +1,7 @@
 import { Hero } from "@/components/Hero";
 import { About } from "@/components/About";
 import { AutonomyStatement } from "@/components/AutonomyStatement";
+import { Projects } from "@/components/Projects";
 import { Zoe } from "@/components/Zoe";
 import { Requirements } from "@/components/Requirements";
 import { Footer } from "@/components/Footer";
@@ -19,6 +20,7 @@ export function App() {
       <main className="relative min-h-screen overflow-x-hidden bg-background text-foreground">
         <Hero />
         <AutonomyStatement />
+        <Projects />
         <About />
         <Zoe />
         <Requirements />

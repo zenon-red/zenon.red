@@ -165,13 +165,14 @@ export function Footer() {
             Support the burn rate directly.
           </p>
 
-          <div className="relative mt-5 inline-flex items-center gap-3">
-            <span className="font-mono text-sm tracking-[0.04em] break-all text-muted-foreground/50">
+          <div className="mt-5 flex flex-col items-center gap-4 sm:flex-row sm:gap-3">
+            <span className="font-mono text-xs tracking-[0.04em] break-all text-muted-foreground/50 sm:text-sm">
               {ZNN_WALLET}
             </span>
+            {/* Desktop: circle button */}
             <button
               onClick={handleCopy}
-              className="relative inline-flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-foreground/10 transition-colors duration-200 hover:bg-foreground/20"
+              className="relative hidden h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-foreground/10 transition-colors duration-200 hover:bg-foreground/20 sm:inline-flex"
               aria-label={copied ? "Copied" : "Copy wallet address"}
             >
               <div ref={copyIconRef} className="absolute inset-0 flex items-center justify-center">
@@ -183,6 +184,20 @@ export function Footer() {
               >
                 <Check className="h-3 w-3 text-foreground/50" />
               </div>
+            </button>
+            {/* Mobile: pill button with caption */}
+            <button
+              onClick={handleCopy}
+              className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium text-foreground/70 transition-colors duration-200 hover:bg-foreground/15 sm:hidden"
+              style={{ backgroundColor: "oklch(0.94 0.005 30 / 0.08)" }}
+              aria-label={copied ? "Copied" : "Copy wallet address"}
+            >
+              {copied ? (
+                <Check className="h-4 w-4 text-foreground/50" />
+              ) : (
+                <Copy className="h-4 w-4 text-foreground/50" />
+              )}
+              {copied ? "Copied" : "Copy address"}
             </button>
           </div>
         </div>

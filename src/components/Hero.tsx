@@ -74,6 +74,7 @@ export function Hero() {
   const copyIconRef = useRef<HTMLDivElement>(null);
   const checkIconRef = useRef<HTMLDivElement>(null);
   const watchTextRef = useRef<HTMLSpanElement>(null);
+  const watchTextMobileRef = useRef<HTMLSpanElement>(null);
   const arrowRef = useRef<HTMLDivElement>(null);
 
   useLayoutEffect(() => {
@@ -314,7 +315,7 @@ export function Hero() {
             href="https://zoe.zenon.red"
             target="_blank"
             rel="noopener noreferrer"
-            className="group/live inline-flex items-center gap-4 font-sans text-lg font-semibold text-foreground transition-colors duration-200 hover:text-foreground sm:text-lg md:text-xl"
+            className="group/live inline-flex items-center gap-3 font-sans text-base font-semibold text-foreground transition-colors duration-200 hover:text-foreground sm:gap-4 sm:text-lg md:text-xl"
             aria-label="Watch agents work in real time on Zoe"
             onMouseEnter={() => {
               if (watchTextRef.current) {
@@ -324,15 +325,27 @@ export function Hero() {
                   ease: "inOut(2)",
                 });
               }
+              if (watchTextMobileRef.current) {
+                animate(watchTextMobileRef.current, {
+                  innerHTML: scrambleText({ text: "Watch agents work" }),
+                  duration: 450,
+                  ease: "inOut(2)",
+                });
+              }
             }}
           >
             <img
               src="/zoe-wordmark.png"
               alt=""
-              className="w-24 object-cover opacity-90"
+              className="w-16 object-cover opacity-90 sm:w-24"
               aria-hidden="true"
             />
-            <span ref={watchTextRef}>Watch agents work in real time</span>
+            <span ref={watchTextRef} className="hidden sm:inline">
+              Watch agents work in real time
+            </span>
+            <span ref={watchTextMobileRef} className="sm:hidden">
+              Watch agents work
+            </span>
             <div ref={arrowRef}>
               <ArrowRight className="h-5 w-5 text-muted-foreground transition-transform duration-300 group-hover/live:translate-x-1" />
             </div>

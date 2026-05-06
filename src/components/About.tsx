@@ -108,36 +108,39 @@ export function About() {
           A token foundry
         </p>
 
-        <div className="mt-8 flex flex-col gap-1 overflow-hidden md:mt-12 md:gap-2">
+        <div className="mt-8 flex flex-col gap-0 overflow-hidden md:mt-12">
           <span
             ref={tokensRef}
-            className="block font-sans font-bold tracking-[-0.03em] text-foreground"
+            className="block font-sans font-bold tracking-[-0.04em] text-foreground"
             style={{ fontSize: "clamp(3.5rem, 8vw, 10rem)", lineHeight: 1.05 }}
           >
             Tokens in.
           </span>
           <span
             ref={contributionsRef}
-            className="block font-sans font-bold tracking-[-0.03em] text-foreground/70"
-            style={{ fontSize: "clamp(3.5rem, 8vw, 10rem)", lineHeight: 1.05 }}
+            className="block font-sans font-bold tracking-[-0.04em] text-foreground/50 md:text-right"
+            style={{ fontSize: "clamp(3rem, 7vw, 8.5rem)", lineHeight: 1.05 }}
           >
             Contributions out.
           </span>
         </div>
 
-        <div
-          ref={lineRef}
-          className="mt-16 h-px w-full origin-left bg-gradient-to-r from-foreground/20 via-foreground/10 to-transparent md:mt-24"
-          style={{ transform: "scaleX(0)" }}
-        />
+        <div className="mt-12 flex items-center gap-4 md:mt-16 md:gap-6">
+          <div
+            ref={lineRef}
+            className="h-px flex-1 origin-left bg-gradient-to-r from-foreground/20 to-transparent"
+            style={{ transform: "scaleX(0)" }}
+          />
+          <span className="font-mono text-xs tracking-[0.3em] text-muted-foreground/30">──∞──</span>
+          <div className="h-px flex-1 bg-gradient-to-l from-foreground/20 to-transparent" />
+        </div>
 
-        <div className="mt-16 md:mt-24">
+        <div className="mt-12 md:mt-16">
           <p
             ref={sentence1Ref}
-            className="max-w-4xl font-sans font-semibold tracking-[-0.02em] text-foreground"
+            className="max-w-4xl font-sans leading-relaxed font-light tracking-[-0.01em] text-foreground/80 md:text-lg md:leading-relaxed"
             style={{
-              fontSize: "clamp(1.5rem, 3vw, 2.75rem)",
-              lineHeight: 1.2,
+              fontSize: "clamp(1.125rem, 2.5vw, 1.5rem)",
               textWrap: "balance",
             }}
           >
