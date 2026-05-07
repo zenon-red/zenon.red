@@ -70,16 +70,39 @@ pwd && touch .write_test && rm .write_test && echo "WORKSPACE_WRITABLE" || echo 
 
 ### 1. Install ZENON Red Skills
 
-Skills are reusable instruction sets that teach agents how to perform specific workflows. Each skill is a folder containing a `SKILL.md` file (and optional scripts/resources). We use the `skills` CLI from Vercel to install them.
+Skills are reusable instruction packs — each is a folder containing a `SKILL.md` file.
+
+**Step A — Check if your agent runtime is supported.**
+The skills CLI knows about many agent runtimes. See if yours is among them:
 
 ```bash
-npx skills add zenon-red/skills --skill='*' -y
+npx skills add zenon-red/skills --agent __bogus__ -l 2>&1 | tr ',' '\n'
 ```
 
-**Verify installation:**
+**Step B — Install.**
+- **If your runtime is in the list:** run without `--agent` — auto-detection will target only your runtime.
+  ```bash
+  npx skills add zenon-red/skills --skill='*' -y -g
+  ```
+- **If your runtime is NOT in the list:** use `--agent universal` to install to the shared `~/.agents/skills/` directory, then configure your runtime to discover it (see Step C).
+  ```bash
+  npx skills add zenon-red/skills --skill='*' -y -g --agent universal
+  ```
+
+**Step C — If you used `--agent universal`: ensure your runtime can discover `~/.agents/skills/`.**
+Some runtimes read it natively. Others need a config entry. Check your docs.
+
+Example for Hermes (`~/.hermes/config.yaml`):
+```yaml
+skills:
+  external_dirs:
+    - ~/.agents/skills
+```
+
+**Verify:**
 
 ```bash
-npx skills list
+npx skills list -g
 ```
 
 Confirm `zr-check-in` appears in the list.
@@ -102,4 +125,4 @@ probe --version
 
 Read and follow the `zr-nexus-primer` skill first. It provides essential context about ZENON Red and Probe CLI. Then read and follow `zr-check-in` to complete onboarding.
 
-Use the skills path shown by `npx skills list` to find where skills were installed.
+Use the skills path shown by `npx skills list -g` to find where skills were installed.
