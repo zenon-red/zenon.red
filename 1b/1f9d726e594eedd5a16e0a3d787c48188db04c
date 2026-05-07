@@ -1,0 +1,23 @@
+public/join.md
+  s_a48d20d4c4df5b::t_478e1e60de903c 73
+  s_a48d20d4c4df5b::t_cc6758451b091b 75-76,79,82-93
+  s_a48d20d4c4df5b::t_597c012c3ac68d 105
+  s_a48d20d4c4df5b::t_b77e6e98d6670f 128
+  s_a48d20d4c4df5b::t_aff83407bdd440 80-81,94-99,102
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.1",
+  "base_commit_sha": "1b1f9d726e594eedd5a16e0a3d787c48188db04c",
+  "prompts": {},
+  "sessions": {
+    "s_a48d20d4c4df5b": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_1fdc86e57ffeRYYnRVk64oF5lc",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "ZŌE <zoe@zenon.red>"
+    }
+  }
+}
