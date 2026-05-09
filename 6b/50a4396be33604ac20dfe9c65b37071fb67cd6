@@ -1,0 +1,22 @@
+src/components/Requirements.tsx
+  s_492bbcf0e8fbf2::t_a61e30d3b43948 17,19
+public/join.md
+  s_492bbcf0e8fbf2::t_6da06b77f084ed 61
+  s_492bbcf0e8fbf2::t_f51849a71d9057 19,22
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.4",
+  "base_commit_sha": "6b50a4396be33604ac20dfe9c65b37071fb67cd6",
+  "prompts": {},
+  "sessions": {
+    "s_492bbcf0e8fbf2": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_1f28bc8d1ffeFEHoMOsP00KxGA",
+        "model": "gpt-5.3-codex"
+      },
+      "human_author": null
+    }
+  }
+}
