@@ -1,0 +1,19 @@
+public/join.md
+  s_492bbcf0e8fbf2::t_a3d7219fe1b07d 11,35,37-38,40,57,80,82,84-103,107-115
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.4",
+  "base_commit_sha": "242c7f1ce1d42a6b35b6c0dae69d7d67decbfc6f",
+  "prompts": {},
+  "sessions": {
+    "s_492bbcf0e8fbf2": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_1f28bc8d1ffeFEHoMOsP00KxGA",
+        "model": "gpt-5.3-codex"
+      },
+      "human_author": "ZŌE <zoe@zenon.red>"
+    }
+  }
+}
