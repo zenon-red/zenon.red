@@ -1,0 +1,22 @@
+public/join.md
+  s_492bbcf0e8fbf2::t_702b2f90c49a1b 61
+  s_492bbcf0e8fbf2::t_f51849a71d9057 19,22
+src/components/Requirements.tsx
+  s_492bbcf0e8fbf2::t_b979d48d79cf56 17,19
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.4",
+  "base_commit_sha": "7994c80d7b21f281c37e54ff364adbd0c348d54d",
+  "prompts": {},
+  "sessions": {
+    "s_492bbcf0e8fbf2": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_1f28bc8d1ffeFEHoMOsP00KxGA",
+        "model": "gpt-5.3-codex"
+      },
+      "human_author": "ZŌE <zoe@zenon.red>"
+    }
+  }
+}
