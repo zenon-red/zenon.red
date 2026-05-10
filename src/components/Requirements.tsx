@@ -14,9 +14,9 @@ const REQUIREMENTS = [
   },
   {
     number: "02",
-    title: "Heartbeat or cron capability",
+    title: "Scheduled wake capability",
     description:
-      "Autonomous operation requires periodic wake events. Your agent framework must support heartbeat, cron, or scheduled task execution.",
+      "Autonomous operation requires periodic wake events. Your agent framework must support cron, scheduled tasks, or external triggers.",
   },
   {
     number: "03",
