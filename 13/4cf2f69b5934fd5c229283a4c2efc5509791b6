@@ -1,0 +1,80 @@
+src/components/Marquee.tsx
+  s_d7000956c62f0f::t_72e462d0af4e79 9
+  s_d7000956c62f0f::t_ad790aaedfaeff 4
+  s_d7000956c62f0f::t_c8586752270ca7 12-13
+  s_d7000956c62f0f::t_6eab2e82850bc3 18-21,23-25,27-29,34
+  s_d7000956c62f0f::t_16422cd6f7c441 14-15
+  s_d7000956c62f0f::t_c15f28c25a417c 26
+  s_d7000956c62f0f::t_4600e8bd408e3b 85-86
+openspec/specs/site/spec.md
+  s_d7000956c62f0f::t_e4c414d28fe76f 96
+  s_d7000956c62f0f::t_b04119765d1970 3,7,9,11-17,19,21,23-24,26,28,30-35,37,39,41,43-44,46,48-49,51,53,55-57,59,61,63-69,71,73-95,97,101,103-136,139-157,160
+  s_d7000956c62f0f::t_b20d17c0730f62 102
+  s_d7000956c62f0f::t_b08bc30ea23138 36
+  s_d7000956c62f0f::t_e90f182e22b8f4 98
+  s_d7000956c62f0f::t_69130f39a0be4a 2,4-6,8,10,18,20,22,25,54,58,60,62,70,72,159
+  s_d7000956c62f0f::t_38e5455a0893d0 1,158
+  s_d7000956c62f0f::t_9ad33734f63608 100
+  s_d7000956c62f0f::t_b1e6b16331bfec 137
+  s_d7000956c62f0f::t_0a33d66a0c55a2 138
+  s_d7000956c62f0f::t_9bd3d18967e7dc 27,29,38,40,42,45,47,50,52
+  s_d7000956c62f0f::t_2fd17ffc9b7031 99
+public/join.md
+  s_c02885e19a03ad::t_ef3f9204dc5553 1,78,91,98
+  s_d7000956c62f0f::t_21bd4cdbd5f56d 10
+  s_d7000956c62f0f::t_611f91c24fa166 76-77,79,82
+  s_d7000956c62f0f::t_d27c5fdf452fbc 90
+  s_d7000956c62f0f::t_0ed89446ae0661 31,37,72,75
+  s_d7000956c62f0f::t_37df27c85dd703 7,14-18,21-30,39,48-51,53,58,60,62,65-67,71,73
+  s_d7000956c62f0f::t_ff7cfa366870d3 44-46
+  s_d7000956c62f0f::t_150d1ced3db35e 32-36
+  s_d7000956c62f0f::t_02547886e25750 92,96-97,106,108
+  s_d7000956c62f0f::t_9cf8d83af9f726 42,52,54-57,59,61,63-64,74,84,95,99-103,107
+src/components/Requirements.tsx
+  s_d7000956c62f0f::t_ed10964a77b7a2 23
+  s_d7000956c62f0f::t_c3541f6ca73fc3 25
+  s_d7000956c62f0f::t_1c42311cd53294 17
+  s_d7000956c62f0f::t_75df9f3240cd1a 152
+  s_d7000956c62f0f::t_e3246d5ed8f6d9 19
+src/components/Hero.tsx
+  s_d7000956c62f0f::t_4a823f5f84db36 14-33,37-41,45-47
+  s_d7000956c62f0f::t_67c4d35394f33e 394-424
+  s_d7000956c62f0f::t_b50d58b841103d 34-36,42-44
+public/pi-logo.svg
+  s_d7000956c62f0f::t_fc3049647392b4 1-24
+openspec/config.yaml
+  s_873b787129db1a::t_1434a2156a884e 1
+  s_873b787129db1a::t_79313561dac74a 2-20
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.0",
+  "base_commit_sha": "134cf2f69b5934fd5c229283a4c2efc5509791b6",
+  "prompts": {},
+  "sessions": {
+    "s_873b787129db1a": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_1af1889caffe8eV8sOfO33jUp5",
+        "model": "glm-5.1"
+      },
+      "human_author": "ZŌE <zoe@zenon.red>"
+    },
+    "s_c02885e19a03ad": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_1aecc1869ffeIm7etzjGPOlfmQ",
+        "model": "gpt-5.5"
+      },
+      "human_author": "ZŌE <zoe@zenon.red>"
+    },
+    "s_d7000956c62f0f": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "7e082b4f-effe-4ad3-b846-03e460e24394",
+        "model": "composer-2.5"
+      },
+      "human_author": "ZŌE <zoe@zenon.red>"
+    }
+  }
+}
