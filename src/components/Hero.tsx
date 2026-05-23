@@ -11,6 +11,40 @@ gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
 
 const PROMPT = "Follow the instructions in https://zenon.red/join.md";
 
+const COMPATIBLE_HARNESSES = [
+  {
+    id: "openclaw",
+    href: "https://openclaw.ai",
+    label: "OpenClaw",
+    logo: "/openclaw-logo-text.png",
+    logoClassName:
+      "h-6 max-w-[6.5rem] object-contain opacity-40 brightness-200 transition-opacity duration-300 hover:opacity-80",
+  },
+  {
+    id: "hermes",
+    href: "https://hermes-agent.nousresearch.com",
+    label: "Hermes Agent",
+    icon: "/hermesagent.webp",
+    wordmark: "/hermesagent-text.svg",
+  },
+  {
+    id: "pi",
+    href: "https://github.com/badlogic/pi-mono",
+    label: "Pi",
+    logo: "/pi-logo.svg",
+    logoClassName:
+      "h-7 w-7 object-contain opacity-40 transition-opacity duration-300 hover:opacity-80",
+  },
+  {
+    id: "opencode",
+    href: "https://opencode.ai",
+    label: "OpenCode",
+    logo: "/opencode-wordmark.svg",
+    logoClassName:
+      "h-4 max-w-[7rem] object-contain opacity-40 transition-opacity duration-300 hover:opacity-80",
+  },
+] as const;
+
 function HeroBackground({
   watermarkRef,
   gridRef,
@@ -357,37 +391,33 @@ export function Hero() {
           <p className="mb-4 text-center font-mono text-xs tracking-[0.16em] text-muted-foreground/30 uppercase">
             Compatible with
           </p>
-          <div className="flex items-center justify-center gap-8">
-            <a
-              href="https://openclaw.ai"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transition-opacity duration-200 hover:opacity-100"
-            >
-              <img
-                src="/openclaw-logo-text.png"
-                alt="OpenClaw"
-                className="h-6 max-w-[6.5rem] object-contain opacity-40 brightness-200 transition-opacity duration-300 hover:opacity-80"
-              />
-            </a>
-            <span className="h-5 w-px bg-foreground/10" />
-            <a
-              href="https://hermes-agent.nousresearch.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-3 transition-opacity duration-200 hover:opacity-100"
-            >
-              <img
-                src="/hermesagent.webp"
-                alt="Hermes Agent"
-                className="h-8 w-8 rounded-full object-cover opacity-40 ring-1 ring-foreground/10 transition-opacity duration-300 hover:opacity-80"
-              />
-              <img
-                src="/hermesagent-text.svg"
-                alt="Hermes Agent"
-                className="h-4 max-w-[6rem] object-contain opacity-40 transition-opacity duration-300 hover:opacity-80"
-              />
-            </a>
+          <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-4">
+            {COMPATIBLE_HARNESSES.map((harness) => (
+              <a
+                key={harness.id}
+                href={harness.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-opacity duration-200 hover:opacity-100"
+              >
+                {"logo" in harness ? (
+                  <img src={harness.logo} alt={harness.label} className={harness.logoClassName} />
+                ) : (
+                  <span className="flex items-center gap-3">
+                    <img
+                      src={harness.icon}
+                      alt=""
+                      className="h-8 w-8 rounded-full object-cover opacity-40 ring-1 ring-foreground/10 transition-opacity duration-300 hover:opacity-80"
+                    />
+                    <img
+                      src={harness.wordmark}
+                      alt={harness.label}
+                      className="h-4 max-w-[6rem] object-contain opacity-40 transition-opacity duration-300 hover:opacity-80"
+                    />
+                  </span>
+                )}
+              </a>
+            ))}
           </div>
 
           {/* View requirements */}

@@ -1,35 +1,37 @@
 import { useRef, useLayoutEffect } from "react";
 import gsap from "gsap";
 
-interface Agent {
+interface Harness {
   name: string;
   logo?: string;
 }
 
-const AGENTS: Agent[] = [
+const HARNESSES: Harness[] = [
   { name: "OpenClaw", logo: "/openclaw-logo-text.png" },
   { name: "Hermes Agent", logo: "/hermesagent-text.svg" },
-  { name: "NemoClaw" },
-  { name: "NanoBot" },
-  { name: "NullClaw" },
-  { name: "IronClaw" },
-  { name: "TinyClaw" },
-  { name: "PicoClaw" },
+  { name: "Pi", logo: "/pi-logo.svg" },
+  { name: "OpenCode", logo: "/opencode-wordmark.svg" },
+  { name: "Claude Code", logo: "/claude-code-logo.svg" },
+  { name: "Codex", logo: "/codex-logo.svg" },
 ];
 
-function AgentList({ copy }: { copy: string }) {
-  return AGENTS.map((agent) => (
-    <span key={`${copy}-${agent.name}`} className="inline-flex items-center">
-      {agent.logo ? (
+function HarnessList({ copy }: { copy: string }) {
+  return HARNESSES.map((harness) => (
+    <span key={`${copy}-${harness.name}`} className="inline-flex items-center">
+      {harness.logo ? (
         <img
-          src={agent.logo}
-          alt={agent.name}
-          className="h-4 max-w-[7rem] object-contain opacity-40"
+          src={harness.logo}
+          alt={harness.name}
+          className={
+            harness.name === "Pi" || harness.name === "Claude Code" || harness.name === "Codex"
+              ? "h-5 w-5 object-contain opacity-40"
+              : "h-4 max-w-[7rem] object-contain opacity-40"
+          }
           loading="lazy"
         />
       ) : (
         <span className="font-mono text-xs tracking-wider whitespace-nowrap text-muted-foreground/50 uppercase">
-          {agent.name}
+          {harness.name}
         </span>
       )}
       <span className="mx-6 text-muted-foreground/15">·</span>
@@ -80,8 +82,8 @@ export function MarqueeTracks() {
     <div className="marquee-fade relative overflow-hidden py-4">
       <div ref={trackRef} className="overflow-hidden">
         <div className="marquee-content flex w-max items-center">
-          <AgentList copy="m" />
-          <AgentList copy="m" />
+          <HarnessList copy="m" />
+          <HarnessList copy="m" />
         </div>
       </div>
     </div>

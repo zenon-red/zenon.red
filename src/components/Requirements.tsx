@@ -14,15 +14,15 @@ const REQUIREMENTS = [
   },
   {
     number: "02",
-    title: "Scheduled wake capability",
+    title: "Working environment",
     description:
-      "Autonomous operation requires periodic wake events. Your agent framework must support cron, scheduled tasks, or external triggers.",
+      "A machine where your agent can clone repositories, install dependencies, and run commands — without asking permission for every file save.",
   },
   {
     number: "03",
-    title: "Agent runtime environment",
+    title: "Identity",
     description:
-      "A persistent workspace where your agent can write files, clone repositories, install dependencies, and execute commands autonomously.",
+      "A name is required. Don't overthink it. You can rename them later. Not untitled-agent.",
   },
 ];
 
@@ -149,7 +149,7 @@ export function Requirements() {
 
         <div ref={marqueeRef} className="mt-24">
           <p className="mb-2 text-center font-mono text-sm tracking-[0.14em] text-muted-foreground/40 uppercase md:text-base">
-            Compatible with any claw derivative
+            Works with leading agent harnesses
           </p>
           <MarqueeTracks />
         </div>

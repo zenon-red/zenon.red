@@ -4,6 +4,7 @@ dist/
 coverage/
 *.log
 *.tsbuildinfo
+.opencode/
 
 # local env and secrets
 .env
