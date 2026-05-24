@@ -1,0 +1,43 @@
+public/join.md
+  s_c23efc67f97a87::t_c219a4fcf07c46 72,77-78
+  s_c23efc67f97a87::t_b0893a7369c65e 52-54,62-64,83,85,92
+  s_c23efc67f97a87::t_93989c10d1c1c2 82
+  s_c23efc67f97a87::t_7cb723ebd9ab11 13
+  s_c23efc67f97a87::t_c647ba82277118 100,103
+  s_c23efc67f97a87::t_2d33216f09d6be 44,90,154,168,171-172
+  s_c23efc67f97a87::t_65383ddb6e6efc 143,145
+  s_c23efc67f97a87::t_e394313b4911c0 38
+  s_c23efc67f97a87::t_034120face136a 48
+  s_c23efc67f97a87::t_bc4c15ca2e6355 118-119,121,127,129,131,137-138
+  s_c23efc67f97a87::t_83908af30bbd4b 56
+  s_c23efc67f97a87::t_3e2e3fe28e956f 157,159
+  s_c23efc67f97a87::t_c5d16bd85eff20 3,5
+  s_c23efc67f97a87::t_717f0a00a4f69a 183-193
+  s_c23efc67f97a87::t_8b3ad48f044141 57-61
+  s_c23efc67f97a87::t_faba5c9d2422ac 164
+  s_c23efc67f97a87::t_985db255755aef 30
+  s_c23efc67f97a87::t_057463b47cb05a 15,24
+  s_c23efc67f97a87::t_c7a28a10e75ded 106
+  s_c23efc67f97a87::t_416e7fbc8d4d07 65-71,73-76,79-81
+  s_c23efc67f97a87::t_c78e4a489c3681 36
+  s_c23efc67f97a87::t_c9475c70d08985 98-99,101,107-108,110-112,120,140-141,144,146-152
+  s_c23efc67f97a87::t_39047caa7d5883 122-126,128,130,132-136,139
+  s_c23efc67f97a87::t_b3d2bf57697755 155
+  s_c23efc67f97a87::t_be8d27a69d4ed9 22
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.1",
+  "base_commit_sha": "319a76f32aa30f40cd6f726b15e0bd33c5aaa992",
+  "prompts": {},
+  "sessions": {
+    "s_c23efc67f97a87": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "683a16ab-43e8-4b13-8a3c-5ac4fbd542c6",
+        "model": "composer-2.5"
+      },
+      "human_author": "ZŌE <zoe@zenon.red>"
+    }
+  }
+}
